@@ -6,10 +6,10 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "https://sanjid.me/"
 
 # Title of your site
-title = "Academic"
+title = "Sanjid"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
@@ -52,31 +52,27 @@ enableGitInfo = false
   # AUTHOR SETUP
 
   # Your details.
-  name = "Lena Smith"
-  role = "Professor of Artificial Intelligence"
+  name = "Sanjidul Hoque"
+  role = "Senior Software Engineer"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Stanford University", url = "" } ]
+  organizations = [ { name = "AppsCode Ltd.", url = "https://appscode.com/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "sanjid.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
-  email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  office_hours = """
-  Monday 10:00 to 13:00<br>
-  Wednesday 09:00 to 10:00<br>
-  Otherwise email to book an appointment
-  """
-  phone = "888 888 88 88"
-  skype = "echo123"
+  email = "sanjid133@gmail.com"
+  address = "Uttara, Dhaka-1230"
+  office_hours = ""
+  phone = "+880 1823 147 690"
+  skype = "sanjid133"
   telegram = ""
   keybase = ""  # Your keybase.io username.
 
   # Enter an optional link for booking appointments (e.g. calendly.com).
-  appointment_url = ""
+  appointment_url = "https://calendly.com/sanjid/30min"
 
   # Discussion link (e.g. link to a forum, mailing list, or chat).
   #   Uncomment line below to use.
@@ -107,13 +103,13 @@ enableGitInfo = false
 
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`.
-  color_theme = "default"
+  color_theme = "forest"
   # Enable users to switch between day and night mode?
   day_night = true
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
-  font = "default"
+  font = "classic"
 
   # Description for social sharing and search engines. If undefined, author role is used in place.
   description = ""
@@ -122,7 +118,7 @@ enableGitInfo = false
   sharing_image = ""
 
   # Twitter username (without @). Used when a vistor shares your site on Twitter.
-  twitter = ""
+  twitter = "sanjid_hoque"
 
   # Diplay a logo in navigation bar rather than title (optional).
   #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
@@ -263,22 +259,34 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "#contact"  # For a direct email link, use "mailto:test@example.org".
+    link = "mailto:sanjid133@gmail.com"  # For a direct email link, use "mailto:test@example.org".
 
   [[params.social]]
-    icon = "twitter"
+    icon = "linkedin-square"
     icon_pack = "fab"
-    link = "https://twitter.com/GeorgeCushen"
+    link = "https://www.linkedin.com/in/sanjidul-hoque-9578147b/"
 
   [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+    icon = "stack-overflow"
+    icon_pack = "fa"
+    link = "https://stackoverflow.com/users/6027873/hoque"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fab"
-    link = "https://github.com/gcushen"
+    link = "https://github.com/sanjid133"
+
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fab"
+    link = "https://twitter.com/sanjid_hoque"
+
+  [[params.social]]
+    icon = "facebook"
+    icon_pack = "ai"
+    link = "https://www.facebook.com/sanjidul.h"
+
+
 
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -301,13 +309,13 @@ enableGitInfo = false
   weight = 1
 
 [[menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
+  name = "Experience"
+  url = "#experience"
   weight = 2
 
 [[menu.main]]
-  name = "Posts"
-  url = "#posts"
+  name = "Publications"
+  url = "#publications"
   weight = 3
 
 [[menu.main]]
@@ -316,14 +324,9 @@ enableGitInfo = false
   weight = 4
 
 [[menu.main]]
-  name = "Tutorials"
-  url = "/tutorial/"
-  weight = 5
-
-[[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 5
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -332,21 +335,7 @@ enableGitInfo = false
 #    url = "files/cv.pdf"
 #    weight = 7
 
-# Search.
-[params.search]
-  # Search provider:
-  #   0: No search engine
-  #   1: Built-in (Fuse)
-  #   2: Algolia (https://www.algolia.com)
-  engine = 1
 
-  # Configuration of Algolia search engine.
-  # Paste the values from your Algolia dashboard.
-  [params.search.algolia]
-    app_id = ""
-    api_key = ""
-    index_name = ""
-    show_logo = false
 
 # Taxonomies.
 [taxonomies]
