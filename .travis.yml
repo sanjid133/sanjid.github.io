@@ -4,9 +4,7 @@ python:
     - master
 
 install:
-    - wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
-    - sudo dpkg -i hugo*.deb
-    - pip install Pygments
+    - go get github.com/gohugoio/hugo
 
 before_script:
     - rm -rf public 2> /dev/null
