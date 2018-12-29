@@ -6,7 +6,7 @@ install:
     - pip install Pygments
 
 script:
-    - hugo -t academic
+    - hugo
 
 after_success: |
     if [ -n "$GITHUB_API_KEY" ]; then
