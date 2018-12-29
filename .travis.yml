@@ -15,7 +15,8 @@ after_success: |
     mv public/* .
     rm -rf public hugo_*
     echo "sanjid.me" > CNAME
+    echo $TRAVIS_REPO_SLUG
     git add -f --ignore-errors --all
     git -c user.name='travis' -c user.email='travis' commit -m 'Auto Generated'
-    git push -f -q https://$GITHUB_USER:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG master
+    git push -f -q https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG master
     fi
