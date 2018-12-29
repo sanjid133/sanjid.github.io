@@ -22,21 +22,21 @@
     </item>
     
     <item>
-      <title>Academic</title>
-      <link>https://sanjid.me/home/hero/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 +0600</pubDate>
-      
-      <guid>https://sanjid.me/home/hero/</guid>
-      <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release   Star</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://sanjid.me/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
       
       <guid>https://sanjid.me/home/about/</guid>
       <description> Biography </description>
+    </item>
+    
+    <item>
+      <title>Academic</title>
+      <link>https://sanjid.me/home/hero/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 +0600</pubDate>
+      
+      <guid>https://sanjid.me/home/hero/</guid>
+      <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release   Star</description>
     </item>
     
     <item>
