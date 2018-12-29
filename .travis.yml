@@ -1,22 +1,29 @@
-language: python
+language: go
+
+python:
+    - master
 
 install:
     - wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
     - sudo dpkg -i hugo*.deb
     - pip install Pygments
 
+before_script:
+    - rm -rf public 2> /dev/null
+
 script:
     - hugo
+    - echo "sanjid.me" > public/CNAME
 
-after_success: |
-    if [ -n "$GITHUB_TOKEN" ]; then
-    git checkout --orphan master
-    git rm -rf .
-    mv public/* .
-    rm -rf public hugo_*
-    echo "sanjid.me" > CNAME
-    echo $TRAVIS_REPO_SLUG
-    git add -f --ignore-errors --all
-    git -c user.name='sanjid133' -c user.email='sanjid133@gmail.com' commit -m 'Auto Generated'
-    git push -f -q https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG master
-    fi
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  email: $GITHUB_EMAIL
+  name: $GITHUB_USERNAME
+  verbose: true
+  keep-history: true
+  local-dir: public
+  target_branch: master  # branch contains blog content
+  on:
+    branch: hugo  # branch contains Hugo generator code
