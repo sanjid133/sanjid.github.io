@@ -27,7 +27,8 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0600</pubDate>
       
       <guid>https://sanjid.me/home/about/</guid>
-      <description>Biography After completing my BSc program at Chittagong University of Engineering &amp;amp; Technology (CUET), I have joined at The TigerWorks Pvt. Ltd.(A SAAS based startup company) which is currently knows as AppsCode Ltd. as full time software engineer. Lately I have promoted as Senior Software Engineer here.</description>
+      <description>Biography After completing my BSc program at Chittagong University of Engineering &amp;amp; Technology (CUET), I have joined at The TigerWorks Pvt. Ltd.(A SAAS based startup company) which is currently knows as AppsCode Ltd. as full time software engineer.
+At the company my first project was working with Phabricator, which is an open source project by facebook. I converted it&amp;rsquo;s database management system from MySQL to PostgreSQL and SSH implementation system from single mode to multi-tenant mode.</description>
     </item>
     
     <item>
